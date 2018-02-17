@@ -1,0 +1,62 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1344\cocoasubrtf720
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red206\green59\blue0;\red217\green11\blue0;\red255\green39\blue18;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 for (i in 1:10)\{\
+print (i)\
+\}\
+\
+For 3 \cf2 for loops\cf0  have the same behavior \
+for (i in seq_along(x)) \{print (x[i])\}\
+for (letter in x) \{print (letter)\}\
+for (i in 1:4) print (x[i])\
+\
+nested Loop \
+x<-matrix(1:6,2,3)\
+for (i in seq_len(nrow(x))) \{\
+              for ( j in seq_len(ncol(x)))\{ \
+                    print (x[i,j])\
+              \}\
+\}\
+\
+\cf3 while loop \
+\cf0 begins by testing a condition, if it is true, then they execute the loop body. Once the loop body is executed, the condition is tested again \
+\
+z<- 5 \
+while (z>=3 && z<=10)\{ \
+ 	print (z)\
+	coin <- rbinom (1,1,0.5) \
+		if (coin ==1)\{ ## random walk \
+			z<-z+1\
+		\} else \{ \
+			z <- z-1\
+		\}\
+\}\
+\
+\cf4 Repeat, Next, Break \cf0 \
+Repeat initiates an infinite loop; these are not commonly used in statistical application but they do have their uses, the only way to exit a repeat loop is call break.\
+x0<-1\
+to1<-1e-8\
+\
+repeat \{\
+	x1<- computerEstimate ()\
+	if (abs (x1-x0)<to1) \{\
+		break \
+	\} else \{ \
+		x0<-x1\
+	\}\
+\}\
+\
+Write Function \
+add2<-function(x,y)\{ \
+x+y \
+\}\
+add2(3,5)\
+\
+\
+\
+\
+}

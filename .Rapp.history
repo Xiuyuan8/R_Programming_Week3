@@ -1,0 +1,136 @@
+y<-c(True,2)
+y<-c(TRUE,2)
+y
+y<-c(1.7,"a")
+y
+y<-c("a",TRUE)
+y
+x<-0:6
+class(x)
+as.numberic(x)
+as.numeric(x)
+as.logica(x)
+as.logical(x)
+as.character(x)
+x<- factor(c("yes","yes","no"))
+x
+table(x)
+unclass(x)
+attr(,"level")
+attr(,"levels")
+m<-matrix(1:4,rnrow=2,ncol=2)
+m<-matrix(1:4,nrow=2,ncol=2)
+dimname(m)<-list(c("a","b"),c("c","d"))
+dimnames(m)<-list(c("a","b"),c("c","d"))
+m
+y<-data.frame(a=1,b="a")
+y
+dput(y)
+dput(y,fil"y.R")
+dput(y,file="y.R")
+new.y<-dget("y.R")
+new.y
+x<-"foo"
+y<-data.frame(a=1,b="a")
+dump(c("x","y"),file="data.R")
+getwd
+ls()
+rm(x,y)
+source("data.R")
+y
+x
+ls
+ls()
+x<-list(2, "a", "b", TRUE)
+x[[2]]
+x <- c(17, 14, 4, 5, 13, 12, 10)
+x[x > 10] <- 4
+x
+x <- c(17, 14, 4, 5, 13, 12, 10)
+x[x > 10] == 4
+getcd()
+pwd
+read.table("hw1_data.csv")
+read.csv("hw1_data.csv")
+is.na(ozone)
+is.na("hw1_data.csv")
+x<-read.csv("hw1_data.csv")
+x
+is.na("x.Ozone")
+idd<-complete.cases(x[Ozone,])
+x[Ozone]
+x[,Ozone]
+sum(is.na(x$Ozone))
+aa=is.n(x$Ozone)
+aa=is.na(x$Ozone)
+aa
+oz=x$Ozone[aa]
+oz
+oz=x$Ozone[!aa]
+oz
+meanv<-mean(oz)
+meanc
+meanv
+good<-complete.cases(x)
+good
+x[good]
+x[good,]
+id<-[x$Ozone>31 & x$Temp>90]
+id<-[x$Ozone>31 ]
+id<-x$Ozone>31
+id
+x
+data<-x[,good]
+data<-x[good,]
+data
+id1<-data$Ozone>31
+id1
+id2<-data$Temp>90
+data2<-data[id1&id2,]
+data2
+mean(data2$Solar.R)
+data2
+id3<-data$Month==5
+id3
+data
+id3<-data$Month==6
+id3
+mean(data$Temp(id3))
+data3
+data3<-data$Month(id3)
+data3<-data[id3,]
+data3
+mean(data$Temp)
+x
+id3<-x$Month==6
+ID3
+id3
+data4<-x[id3,]
+data4
+aa<-mean(x$Temp[id3,])
+data5<-x[id3,]
+data5
+mean(data5$Temp)
+X
+x
+id6<-x$Ozone>31 & x$Temp>90
+id6
+data6<-x[id6,]
+aa<-mean(data6$Solar.R)
+aa
+x<-c("a","b","c","d")
+for (i in 1:4){ }
+for (i in 1:4){ }
+for (i in 1:4){ print x(i)}
+for (i in 1:4){ print (x[i])}
+for (i in seq_along(x)) {print (x[i])}
+for (letter in x) {print (letter)}
+for (i in 1:4) print (x[i])
+x<-matricx(1:6,2,3)
+x<-matrix(1:6,2,3)
+for (i in seq_len(nrow(x))){ for ( j in seq_len(ncol(x)){ print (x[i,j])}}
+for (i in seq_len(nrow(x))) { for ( j in seq_len(ncol(x))){ print (x[i,j])}}
+add2<-function(x,y){ #
+x+y #
+}
+add2(3,7)
